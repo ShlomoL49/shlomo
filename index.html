@@ -6,9 +6,41 @@
 t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,
 o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),
 p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f72efc83-a06b-4fa5-bf85-3670cbc6b184")
-</script>  
+</script>
+  
+  
+<script>window.onload = function(){
+            AF('pba', 'event', {eventType: 'EVENT', eventCategory: 'conversion',eventName: 'subscription', eventLabel: 'newsletters'});
+        }
+</script>
+  
+<script>
+        window.onload = function () {
+            document.getElementById('checkout').addEventListener('click', function () {
+                AF('pba', 'event' {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'checkout'});
+            });
+        }
+
+    </script>
 </head> 
 
 <body>
-  test
+ <h1>Shopping Cart</h1>
+    <h2>Shirt</h2>
+    <p>
+        <ul>
+            <li>Color: Blue</li>
+            <li>Quantity: 2</li>
+            <li>Price: $20</li>
+        </ul>
+    </p>
+    <h2>Pants</h2>
+    <p>
+        <ul>
+            <li>Color: Black</li>
+            <li>Quantity: 3</li>
+            <li>Price: $15</li>
+        </ul>
+    </p>
+    <button id='checkout'>Checkout</button>
 </body>
