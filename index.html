@@ -20,6 +20,11 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f72efc83-
                 AF('pba', 'event' {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'checkout'});
             });
         }
+        window.onload = function () {
+            document.getElementById('id').addEventListener('click', function () {
+                AF('pba', 'event', {eventType: 'IDENTIFY', customUserId:'663274'});
+            });
+        }
 
     </script>
 </head> 
@@ -43,4 +48,5 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f72efc83-
         </ul>
     </p>
     <button id='checkout'>Checkout</button>
+    <button id='id'>ID</button>
 </body>
