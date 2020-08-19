@@ -1,56 +1,11 @@
 <head>
-<!-- AppsFlyer web SDK -->
 <script>
-!function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){
-(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},
-t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,
-o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),
-p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f72efc83-a06b-4fa5-bf85-3670cbc6b184")
+!function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","banners",{banners: {key: "55256c71-47ef-4505-ac56-c51bcb05499d"}})
+AF('banners', 'showBanner')
 </script>
-  
-  
-<script>window.onload = function(){
-            AF('pba', 'event', {eventType: 'EVENT', eventCategory: 'conversion',eventName: 'subscription', eventLabel: 'newsletters'});
-        }
-</script>
-  
-<script>
-        window.onload = function () {
-            document.getElementById('checkout').addEventListener('click', function () {
-                AF('pba', 'event' {eventType: 'EVENT',eventCategory: 'conversion', eventName: 'checkout'});
-            });
-        }
-        window.onload = function () {
-            document.getElementById('id').addEventListener('click', function () {
-                AF('pba', 'event', {eventType: 'IDENTIFY', customUserId:'663274'});
-            });
-        }
-
-    </script>
 </head> 
 
 <body>
   
-  <p>test onelink <a href="https://app.appsflyer.com/id719525810?c=PokernewsCasino&af_adset=Banner&af_ad=728x90&af_siteid=%7Bpublisher_id%7D&af_sub_siteid=%7Bsubpublisher_id%7D&af_cost_value=%7Bcpi_rate%7D&pid=ibusmedia_int&af_click_lookback=7d&clickid=%7Bclickid%7D&af_sub1=7353">test here</a></p>
-  
-  
- <h1>Shopping Cart</h1>
-    <h2>Shirt</h2>
-    <p>
-        <ul>
-            <li>Color: Blue</li>
-            <li>Quantity: 2</li>
-            <li>Price: $20</li>
-        </ul>
-    </p>
-    <h2>Pants</h2>
-    <p>
-        <ul>
-            <li>Color: Black</li>
-            <li>Quantity: 3</li>
-            <li>Price: $15</li>
-        </ul>
-    </p>
-    <button id='checkout'>Checkout</button>
-    <button id='id'>ID</button>
+  <p> hello world </p>
 </body>
